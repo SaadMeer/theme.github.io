@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #fafafa;
+}
+
+.template-container{
+    width: auto;
+    padding: 3.5em 0em;
+}
+.template-container-center{
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+/* left container */
+.template-section-left{
+    width: 73%;
+}
+
+.template-main-left h1{
+    color: #212529;
+    font-size: 1.75em;
+}
+.template-main-left p{
+    color: #747171;
+    padding-top: .8em;
+    font-size: .8em;
+    font-weight: 600;
+}
+.theme-view-container{
+    display: flex;
+    position: relative;
+    transition: .5s all ease-in-out;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-top: 50px;
+    /* border: 1px solid red; */
+}
+.theme-view-container img{
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    filter: brightness(80%);
+}
+.theme-view-container:hover .live-preview-container{
+    opacity: 1;
+}
+.live-preview-btns{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Descreption section */
+.description{
+    background-color: #ffffff;
+    padding: 0rem 0rem 1rem 0rem;
+    margin-top: 2.5rem;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    /* box-shadow: rgba(99, 99, 99, 0.034) 0px 2px 10px 3px; */
+}
+.btn-container{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.btn:nth-child(1) {
+    border-top-left-radius: 8px;
+}
+.btn:nth-child(3) {
+    border-top-right-radius: 8px;
+}
+.btn{
+    padding: 1rem 0;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    display: block;
+    background: #e7e6e6;
+    cursor: pointer;
+    transition: 0.5s ease;
+    letter-spacing: 2px;
+}
+.btn:hover:not(.active) {
+    background: #ffffff;
+    color: #dbb403;
+}
+.article {
+    display: none; 
+    width: 85%;
+    padding-top: 20px;
+}
+.article.active {
+    display: block;   
+}
+.btn.active {
+    background: #b1b0b0;
+    color: #ffffff;
+}
+.article p{
+    padding: .5rem 1.5rem 1rem 2rem;
+    color: #000;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-size: .85rem;
+    font-weight: 500;
+}
+.article h5{
+    font-size: 1em;
+    padding: 1rem 1.5rem 0rem 2rem;
+}
+.article ul{
+    list-style: none;
+    padding: .5rem 1.5rem 1rem 4rem;
+}
+.article ul li{
+    font-size: .85em;
+    font-weight: 500;
+    padding-top: .7em;
+}
+.article ul li::before{
+    content: "\2022";
+    color: #212529;
+    font-weight: bolder;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+/* Descreption section */
+/* left container end*/
+
+
+/* right container start*/
+.template-section-right{
+    width: 27%;  
+    /* border: 1px solid red; */
+}
+.template-search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4.5px;
+}
+.template-search-container input {
+    padding: .5em 10% .5em 3%;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px 0px 0px 3px;
+    outline: none;
+    background-color: ;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.template-btn-search {
+    background-color: #ffd000;
+    border: 1px solid #ffd000;
+    font-size: 0.93em;
+    padding: 0.4em 1em;
+    cursor: pointer;
+}
+/* template small cart */
+
+/* template small cart */
+.template-small-cart-container{
+    padding: 0em 1.5em;
+    margin-top: 30px;
+}
+.template-small-cart{
+    padding: 1.5em 0em 3em 0em;
+    margin-top: 73.5px;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.041) 0px 2px 10px 3px;
+}
+.template-cart-txt{
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 1em;
+}
+.template-cart-txt h5{
+    font-size: .85em;
+}
+.template-cart-txt p{
+    font-size: .9em;
+    color: #dbb403;
+    font-weight: 700;
+}
+.template-cart-ul ul{
+    list-style: none;
+    padding: .5em 1.8em;
+}
+.template-cart-ul ul li{
+    font-size: .9em;
+    margin-top: 5px;
+}
+.template-cart-ul ul li::before{
+    content: "\2022";
+    color: #212529;
+    font-weight: bolder;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+.template-cart-btn{
+    width: 100%;
+    text-align: center;
+    margin-top:15px;
+}
+.btn-addToCart{
+    padding: .4em 3em;
+    text-align: center;
+    background-color: #ffd000;
+    border: 1px solid #ffd000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn-Favourite{
+    padding: .4em 3.3em;
+    text-align: center;
+    background-color: #e7e6e6;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    margin-top:8px;
+    cursor: pointer;
+}
+.cart{
+    font-size: 1.3em;
+    margin-bottom: -4px;
+}
+.heart{
+    font-size: 1.3em;
+    margin-bottom: -4px;
+}
+.star{
+    font-size: .9em;
+    margin-bottom: -2.5px;
+    margin-left: .2em;
+}
+.template-cart-btn p{
+    margin-top: 5px;
+    font-size: .9em;
+}
+/* Small Features */
+.template-features-container{
+    padding: 0em 1.5em;
+    margin-top: 30px;
+}
+.template-features-small p{
+    font-size: .8em;
+    text-align: center;
+    font-weight: 400;
+    padding: 2em;
+}
+.template-features-txt{
+    padding: 1.5em 0em 3em 0em;
+    margin-top: 73.5px;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    box-shadow: rgba(99, 99, 99, 0.041) 0px 2px 10px 3px;
+}
+.template-features-txt ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 0em 1.2em;
+    width: 100%;
+}
+.template-features-txt ul li{
+    font-size: .9em;
+    text-align: left;
+}
+.template-features-txt ul li:last-child{
+    font-size: .9em;
+    text-align: right;
+}
+
+/* right container end*/
+
+

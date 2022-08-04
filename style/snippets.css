@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #fafafa;
+}
+.header {
+  -webkit-box-shadow: 0 1px 8px rgb(0 0 0 / 45%);
+  -moz-box-shadow: 0 1px 8px rgb(0 0 0 / 45%);
+  box-shadow: 0 1px 8px rgb(0 0 0 / 45%);
+  /* box-shadow: 0 8px 6px -6px rgb(155, 154, 154); */
+}
+.catg-box-container {
+  padding-top: 3em;
+}
+.catg-box-container p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  word-spacing: 1px;
+  line-height: 24px;
+  color: rgb(116, 113, 113);
+  padding-bottom: 30px;
+}
+
+.snippets-catg-box {
+  border-radius: 0px;
+  background-color: transparent;
+}
+.snippets-catg-box h5 {
+  margin-bottom: 8px;
+}
+.snippets-catg-box h5 a {
+  color: #212529;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.snippets-catg-box p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 7px;
+  word-spacing: 1px;
+  line-height: 24px;
+  color: rgb(116, 113, 113);
+  padding-bottom: 30px;
+}
+.catg-img img {
+  border-radius: 3px;
+}
+.catg-boxes-snippets {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+  /* border-radius: 10px 10px 0px 0px; */
+}
